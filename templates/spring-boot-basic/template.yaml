@@ -12,7 +12,7 @@ metadata:
     - renovate
     - sonarqube
 spec:
-  owner: cnoe-001
+  owner: cnoe-demo
   system: microservices
   type: service
 
@@ -31,7 +31,7 @@ spec:
         orgName:
           title: Organization name
           type: string
-          default: cnoe-001
+          default: cnoe-demo
         appName:
           title: App name
           type: string
