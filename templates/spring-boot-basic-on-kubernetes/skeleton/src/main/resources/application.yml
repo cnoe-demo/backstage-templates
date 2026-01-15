@@ -8,3 +8,8 @@ management:
     show-details: always
     probes:
       enabled: true
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping: DEBUG
