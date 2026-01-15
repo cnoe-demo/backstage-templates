@@ -3,6 +3,14 @@ kind: Deployment
 metadata:
   name: ${{ values.appName }}
 spec:
+  strategy:
+    $retainKeys:
+      - type
+      - rollingUpdate
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 33%
   selector:
     matchLabels:
       app: ${{ values.appName }}
